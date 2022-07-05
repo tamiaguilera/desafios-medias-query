@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  header{
+    display: none;
+    grid-area: H;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 50px;
+  }
+ 
+  
+  body {
+    font-family: 'Marcellus', serif;
+    color: #1c1c1c;
+    background: rgba(255, 255, 255, 0.446);
+  }
+  
+  .main-container {
+    display: grid;
+    grid-template-areas:
+    "A H H H H"
+    "A M M M M"
+    "F M M M M";
+  }
+.main-container h2{
+      padding:1rem;
+      gap: 1rem;
+  }
+.icono{
+    display: flex;
+    align-items: center;
+   
+}
+.lista{
+    font-size: 1.1rem;
+    padding-left: 2rem;
+}
+.filtro{
+  padding: 2rem;
+  background-color: #546e7a;
+}
+
+aside {
+    grid-area: A;
+    padding: 3rem 3rem;
+    background-color: #819ca9;
+    box-shadow: 2px;
+    
+}
+ main {
+    justify-content: center;
+  }
+  
+  .product-grid {
+    padding: 2rem;
+    display: grid;
+    grid-area: M;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .card {
+    background: rgb(127, 107, 107);
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+  }
+  
+  .card h3 {
+    margin: 1rem 0;
+  }
+  
+  .card img {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  
+  .btn {
+    background-color: rgb(151, 151, 154);
+    color: rgb(15, 12, 12);
+    
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+  .paginador{
+    display: none;
+    padding: 2rem;
+  }
+
+  footer{
+    grid-area: F;
+    font-family: 'Marcellus', serif;
+    background-color: #29434e;
+    text-align: center;
+    padding: 1rem;
+    color: whitesmoke;
+  }
+
+/*Mobile */
+  @media (max-width: 576px) {
+    header{
+      display: block;
+    }
+    .main-container {
+      display: grid;
+      grid-template-areas:
+      "H H H H H"
+      "M M M M M"
+      "F F F F F";
+    }
+    aside{
+      display: none;
+    }
+    .paginador{
+      display: flex;
+      justify-content: center;
+    }
+
+    .product-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+}
+/*Tablet */
+@media (min-width:576px) and (max-width: 992px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
