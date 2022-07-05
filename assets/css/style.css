@@ -2,20 +2,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
   }
 
   header{
     display: none;
     grid-area: H;
-    font-family: 'Rubik Mono One', sans-serif;
     font-size: 50px;
   }
  
   
   body {
-    font-family: 'Marcellus', serif;
     color: #1c1c1c;
-    background: rgba(255, 255, 255, 0.446);
+    background: #b0bec5;
   }
   
   .main-container {
@@ -32,6 +31,8 @@
 .icono{
     display: flex;
     align-items: center;
+  
+    
    
 }
 .lista{
@@ -40,13 +41,16 @@
 }
 .filtro{
   padding: 2rem;
-  background-color: #546e7a;
+  background-color: #9e9e9e;
+  
 }
 
 aside {
     grid-area: A;
-    padding: 3rem 3rem;
-    background-color: #819ca9;
+    padding: 2rem 2rem;
+    background-color: #cfcfcf
+
+    ;
     box-shadow: 2px;
     
 }
@@ -70,7 +74,7 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 1rem;
+    border-radius: 2rem;
   }
   
   .card h3 {
@@ -80,7 +84,7 @@ aside {
   .card img {
     width: 100%;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 2rem;
   }
   
   .btn {
@@ -100,8 +104,7 @@ aside {
 
   footer{
     grid-area: F;
-    font-family: 'Marcellus', serif;
-    background-color: #29434e;
+    background-color: #707070;
     text-align: center;
     padding: 1rem;
     color: whitesmoke;
